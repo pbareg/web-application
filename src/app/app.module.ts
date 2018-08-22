@@ -26,7 +26,13 @@ import { MenuComponent } from './menu/menu.component';
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      { path: 'login', component: LoginComponent }
+      { path: 'login', component: LoginComponent },
+      { path: 'welcome', component: WelcomeComponent },
+      { path: 'register', component: RegistrationComponent },
+      { path: 'cards', component: CreditcardComponent },
+      { path: 'history', component: AccouthistoryComponent },
+      { path: '', redirectTo: 'welcome', pathMatch: 'full'},
+      { path: '**', component: WelcomeComponent, pathMatch: 'full'}
     ])
 
   ],
